@@ -60,29 +60,18 @@
 <body onload="initialize()">
 
 
-<div class="card-panel hoverable" id="modal_endereco">
-  <form action="javascript: void(0);" onSubmit="calcRoute()">
+<div class="card-panel hoverable" id="modal_endereco" style="border-radius: 25px;
+    height: 0px;
+    width: 255px;
+    margin-inline-start: 25px;
+    margin: 20px; margin-block-start: 317px;">
+  <form action="javascript: void(0);" onSubmit="calcRoute()" style="margin-top: -22px;">
     <div>
-        <input type="text" size="50" value="-23.5632103,-46.656439" id="endereco" />
+        <input type="text" size="50" value="Qual é o seu destino?" id="endereco" style="    border-bottom: white; height: 43px; margin: inherit;"/>
         <input type="hidden"  id="latlong" />
     </div>
 
-    <div>
-        <input type="text" size="50" value="Avenida corifeu de azevedo marques , 2000 sp brasil" id="destino" />
-   
-    </div>
-
-    <div ng-show="parada1">
-        <input type="text" size="50" value="Avenida Paulista , 2000 sp brasil" id="parada1" />
-   
-    </div>
-    <div ng-show="parada2">
-        <input type="text" size="50" value="Avenida da Saude , 2000 sp brasil" id="parada2" />
-   
-    </div>
-     
-    <button type="submit" class="waves-effect waves-light btn">Solicitar <?php //echo $nome; ?></button>
-     <button type="button" class="waves-effect waves-light btn">+parada+</button>
+<!--    <button style="margin-top: 30px;" type="submit" class="btn waves-effect waves-light red">Pesquisar<i class="material-icons right">send</i> <?php //echo $nome; ?></button> -->
 </form></div>
     </div>
 
@@ -95,16 +84,29 @@
 </div>
 
 <div style="width:100%;" id="map"></div>
- <div class="fixed-action-btn vertical click-to-toggle" id="menu_locais">
+ <div class="fixed-action-btn vertical click-to-toggle" id="menu_locais" style="bottom: 124px;">
     <a class="btn-floating btn-large red">
-      <i class="material-icons">mElmksdjhdkjshkdjfTTY</i>
+      <i class="material-icons">add</i>
     </a>
     <ul>
       <li><a class="btn-floating yellow darken-1"><i class="material-icons">star</i></a></li>
       <li><a class="btn-floating blue"><i class="material-icons">access_time</i></a></li>
       <li><a class="btn-floating red" href="/uber/profile"><i class="material-icons">person</i></a></li>
     </ul>
+
+      <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel teal">
+        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+        </span>
+      </div>
+    </div>
   </div>
+
+
+  </div>
+
 
   <div class="card" id="motorista" style="display: none;width:100%; height:80%">
    
