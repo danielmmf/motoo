@@ -64,7 +64,7 @@
     height: 0px;
     width: 255px;
     margin-inline-start: 25px;
-    margin: 20px; margin-block-start: 317px;">
+    margin: 20px; margin-block-start: 150px;">
   <form action="javascript: void(0);" onSubmit="calcRoute()" style="margin-top: -22px;">
     <div>
         <input type="text" size="50" value="Qual é o seu destino?" id="endereco" style="    border-bottom: white; height: 43px; margin: inherit;"/>
@@ -84,7 +84,7 @@
 </div>
 
 <div style="width:100%;" id="map"></div>
- <div class="fixed-action-btn vertical click-to-toggle" id="menu_locais" style="bottom: 124px;">
+ <div class="fixed-action-btn vertical click-to-toggle" id="menu_locais">
     <a class="btn-floating btn-large red">
       <i class="material-icons">add</i>
     </a>
@@ -94,13 +94,31 @@
       <li><a class="btn-floating red" href="/uber/profile"><i class="material-icons">person</i></a></li>
     </ul>
   </div>
-      <div class="row">
+      <div class="row" style="margin: unset;">
     <div class="col s12 m5">
-      <div class="card-panel" style="margin: 10px; margin-block-end: -49px; padding-top: inherit; padding: inherit;">
+      <div class="card-panel" style="margin: 10px; padding: inherit;">
         <span class="text">Seus créditos:
         </span>
-        <h4>R$ 100 ,00</h4>
-        <button class="btn waves-effect waves-light red">Recarregar</button>
+        <h4 style="text-align: center;">R$ 100 ,00</h4>
+        <button class="btn waves-effect waves-light red" style="margin: 5px;">Recarregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin: unset;">
+    <div class="col s12 m5">
+      <div class="card-panel" style="margin: 10px; padding: inherit;">
+        <span class="text">Numero de usuario
+        </span>
+        <h4 style="text-align: center;">1349711-95</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin: unset;">
+    <div class="col s12 m5">
+      <div class="card-panel" style="margin: 10px; padding: inherit;">
+        <span class="text">
+        </span>
+        <h4 style="text-align: center;">Pagar via  NFC</h4>
       </div>
     </div>
   </div>
