@@ -509,16 +509,28 @@
            
             <div class="col-md-6">
               <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats" style="text-align: center;" >                                
-                                <p class="card-category">Número de usuário:</p>
-                                <h3 class="card-title">1349711-95</h3>
-                            </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">                                
-                                <h3 class="card-title" style="padding: 10px;">Pagar via NFC</h3>
-                            </div>
-                          </div>
+                <div class="card card-stats" style="text-align: center;" >
+                    <p class="card-category">Número de usuário:</p>
+                    <h3 class="card-title">1349711-95</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">                                
+                    <h3 class="card-title" style="padding: 10px;">Pagar via NFC</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <h5 class="card-title" style="margin: 2px;">LINHA : 795 - C Jd. Angela</h5>
+                    <div class="card-header card-header-rose card-header-icon" style="text-align: left;">
+                        <p class="card-category">Chega em:</p>
+                        <h3 class="card-title">5 min</h3>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
