@@ -122,6 +122,15 @@
       </div>
     </div>
   </div>
+  <div class="row" style="margin: unset;">
+    <div class="col s12 m5">
+      <div class="card-panel" style="margin: 10px; padding: inherit;">
+        <span class="text">Linha: 795-C-Parque Jardim Angela
+        </span>
+        <h4 style="text-align: left;">Chegar em: <span> 5 min</span></h4>
+      </div>
+    </div>
+  </div>
 
   <div class="card" id="motorista" style="display: none;width:100%; height:80%">
    
