@@ -8,15 +8,15 @@ class CoreController extends BaseController
 {
 
     public static function pega_nome_view(){
-        return  env('TEMPLATE_NAME', 'core');
+        return  env('TEMPLATE_NAME', 'motoo');
     }
     
     public static function pega_nome_app(){
-        return  env('APP_NAME', 'core');
+        return  env('APP_NAME', 'motoo');
     }
 
     public static function pega_nome_product(){
-        return  env('PRODUCT_NAME', 'core');
+        return  env('PRODUCT_NAME', 'motoo');
     }
   
     public function index(){
@@ -58,14 +58,14 @@ class CoreController extends BaseController
        $arquivo = static::pega_nome_view();
        $config_array['nome_app']= static::pega_nome_app();
        $config_array['nome_product']= static::pega_nome_product();
-       $config_array['template_folder']= $arquivo?:'core';
+       $config_array['template_folder']= $arquivo?:'motoo';
        $dados = array_merge($dados, $config_array);
-       //$nome_app = \App\Http\Controllers\CoreController::pega_nome_app();
+       //$nome_app = \App\Http\Controllers\motooController::pega_nome_app();
         $view = '../resources/views/'.$config_array['template_folder'].'/'.$partial.'.php';
         if(file_exists($view)){
              return view($config_array['template_folder'].'/'.$partial, $dados);
         }else{
-            return view('core/'.$partial, $dados);
+            return view('motoo/'.$partial, $dados);
         }
     }
 }
