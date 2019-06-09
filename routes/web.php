@@ -12,6 +12,7 @@
 */
 
 $router->get('/', 'CoreController@index');
+$router->get('/motoo', 'CoreController@motoo');
 $router->get('/airportzoom', 'UbersController@index');
 //$router->get('/airportzoom/driver/register', 'UbersController@reg_driver');
 $router->get('/airportzoom/driver/login', 'UbersController@driver_login');

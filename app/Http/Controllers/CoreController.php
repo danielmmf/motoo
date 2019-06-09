@@ -22,6 +22,10 @@ class CoreController extends BaseController
     public function index(){
         return $this->load_view('index', array('nome'=>'funcionou')); 
     }
+
+    public function motoo(){
+        return $this->load_view('motoo', array('nome'=>'funcionou')); 
+    }
     
     public function registrar(){
         return $this->load_view('registrar'); 
