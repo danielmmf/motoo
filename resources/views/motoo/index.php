@@ -387,7 +387,7 @@
                 <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Google Maps</a>
+            <a class="navbar-brand" href=""><img src="assets/img/logo-sptrans.png"></a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -452,11 +452,11 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
+            <!--<div class="col-md-12">
               <div class="card ">
                 <div class="card-header card-header-text card-header-rose">
                   <div class="card-text">
-                    <h4 class="card-title">Satellite Map</h4>
+                    <h4 class="card-title">Qual o seu destino?</h4>
                   </div>
                 </div>
                 <div class="card-body ">
@@ -464,13 +464,22 @@
                   <div id="satelliteMap" class="map map-big"></div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="col-md-6">
               <div class="card ">
                 <div class="card-header card-header-text card-header-rose">
-                  <div class="card-text">
-                    <h4 class="card-title">Regular Map</h4>
+                  <div class="card-text" style="background: linear-gradient(60deg,#f44336,#f44336);">
+                    <h4 class="card-title" >Qual o seu destino?</h4>
                   </div>
+                  <form class="navbar-form" style="margin-inline-end: 50px;">
+                      <div class="input-group no-border">
+                        <input type="text" value="" class="form-control" placeholder="Av. Paulista...">
+                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                          <i class="material-icons">search</i>
+                          <div class="ripple-container"></div>
+                        </button>
+                      </div>
+                    </form>
                 </div>
                 <div class="card-body ">
                   <h4 class="card-title"></h4>
@@ -479,56 +488,42 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card ">
-                <div class="card-header card-header-text card-header-rose">
-                  <div class="card-text">
-                    <h4 class="card-title">Custom Skin & Settings Map</h4>
-                  </div>
-                </div>
-                <div class="card-body ">
-                  <h4 class="card-title"></h4>
-                  <div id="customSkinMap" class="map"></div>
-                </div>
-              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                              <div class="card-header card-header-rose card-header-icon">
+                                <div class="card-icon" style="background: linear-gradient(60deg,#f44336,#f44336);">
+                                  <i class="material-icons">attach_money</i>
+                                </div>
+                                <p class="card-category">Seus créditos</p>
+                                <h3 class="card-title">R$ 100,00</h3>
+                              </div>
+                              <div class="card-footer">
+                                <div class="stats">
+                                  <i class="material-icons">local_offer</i> 
+                                  <h5>Recarregar</h5>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+            </div>
+           
+            <div class="col-md-6">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats" style="text-align: center;" >                                
+                                <p class="card-category">Número de usuário:</p>
+                                <h3 class="card-title">1349711-95</h3>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card card-stats">                                
+                                <h3 class="card-title" style="padding: 10px;">Pagar via NFC</h3>
+                            </div>
+                          </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="https://creative-tim.com/presentation">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="http://blog.creative-tim.com">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://www.creative-tim.com/license">
-                  Licenses
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
-        </div>
-      </footer>
+
     </div>
   </div>
   <div class="fixed-plugin">
