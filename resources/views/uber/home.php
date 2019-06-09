@@ -93,20 +93,17 @@
       <li><a class="btn-floating blue"><i class="material-icons">access_time</i></a></li>
       <li><a class="btn-floating red" href="/uber/profile"><i class="material-icons">person</i></a></li>
     </ul>
-
+  </div>
       <div class="row">
     <div class="col s12 m5">
-      <div class="card-panel teal">
-        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+      <div class="card-panel" style="margin: 10px; margin-block-end: -49px; padding-top: inherit; padding: inherit;">
+        <span class="text">Seus créditos:
         </span>
+        <h4>R$ 100 ,00</h4>
+        <button class="btn waves-effect waves-light red">Recarregar</button>
       </div>
     </div>
   </div>
-
-
-  </div>
-
 
   <div class="card" id="motorista" style="display: none;width:100%; height:80%">
    
