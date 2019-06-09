@@ -479,7 +479,7 @@
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#messages" data-toggle="tab">
-                            Ociosidade
+                            Eficiência
                             <div class="ripple-container"></div>
                           <div class="ripple-container"></div></a>
                         </li>
@@ -498,59 +498,96 @@
                     <div class="tab-pane" id="profile">
                       <div class="card card-stats">
                         <div class="card-header card-header-warning card-header-icon">
+                          <div class="card-icon-card" style="float: left;">
+                            <i class="material-icons" style="color: tomato;">commute</i>
+                          </div>
                           <p class="card-category">Ônibus em circulação</p>
                           <h3 class="card-title">184</h3>
                         </div>
                       </div>
                         <div class="card card-stats">
                           <div class="card-header card-header-warning card-header-icon">
-                             <p class="card-category">Ônibus em atraso</p>
+                          <div class="card-icon-card" style="float: left;">
+                            <i class="material-icons" style="color: tomato;">commute</i>
+                          </div>
+                             <p class="card-category">Ônibus parados</p>
                             <h3 class="card-title">204</h3>
                           </div> 
                         </div>
                         <div class="card card-stats">
                           <div class="card-header card-header-warning card-header-icon">
-                             <p class="card-category">Ônibus danificados após saída</p>
-                            <h3 class="card-title">14</h3> 
+                            <div class="card-icon-card" style="float: left;">
+                            <i class="material-icons" style="color: tomato;">commute</i>
+                          </div>
+                             <p class="card-category">Eficiência</p>
+                            <h3 class="card-title">14 %</h3> 
                           </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="messages">
+                                                  <div class="card card-stats">
+                              <div class="card-header card-header-rose card-header-icon">
+                                <div class="card-icon" style="background: linear-gradient(60deg,#f44336,#f44336);">
+                                  <i class="material-icons">equalizer</i>
+                                </div>
+                                <p class="card-category">Assentos livres</p>
+                                <h3 class="card-title">5%</h3>
+                              </div>
+                              <div class="card-footer">
+                                <div class="stats">
+                                  <i class="material-icons">local_offer</i> Tracked from Google Analytics
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card card-stats">
+                              <div class="card-header card-header-rose card-header-icon">
+                                <div class="card-icon" style="background: linear-gradient(60deg,#f44336,#f44336);">
+                                  <i class="material-icons">equalizer</i>
+                                </div>
+                                <p class="card-category">Assentos ocupados</p>
+                                <h3 class="card-title">85%</h3>
+                              </div>
+                              <div class="card-footer">
+                                <div class="stats">
+                                  <i class="material-icons">local_offer</i> Tracked from Google Analytics
+                                </div>
+                              </div>
+                            </div>
                       <div class="card card-stats">
                         <div class="card-header card-header-warning card-header-icon">
-                          <p class="card-category">Ônibus em circulação</p>
+                          <p class="card-category">Acidentes</p>
                           <h3 class="card-title">184</h3>
                         </div>
                       </div>
                         <div class="card card-stats">
                           <div class="card-header card-header-warning card-header-icon">
-                             <p class="card-category">Ônibus em atraso</p>
+                             <p class="card-category">Incidentes</p>
                             <h3 class="card-title">204</h3>
                           </div> 
-                        </div>
-                        <div class="card card-stats">
-                          <div class="card-header card-header-warning card-header-icon">
-                             <p class="card-category">Ônibus danificados após saída</p>
-                            <h3 class="card-title">14</h3> 
-                          </div>
                         </div>
                     </div>
                     <div class="tab-pane active show" id="settings">
                       <div class="card card-stats">
                         <div class="card-header card-header-warning card-header-icon">
-                          <p class="card-category">Ônibus em circulação</p>
+                          <p class="card-category">Total de usuários</p>
                           <h3 class="card-title">184</h3>
                         </div>
                       </div>
                         <div class="card card-stats">
                           <div class="card-header card-header-warning card-header-icon">
-                             <p class="card-category">Ônibus em atraso</p>
+                             <p class="card-category">Pagamento efetivo total</p>
                             <h3 class="card-title">204</h3>
                           </div> 
                         </div>
                         <div class="card card-stats">
                           <div class="card-header card-header-warning card-header-icon">
-                             <p class="card-category">Ônibus danificados após saída</p>
+                             <p class="card-category">Total de subsídios</p>
+                            <h3 class="card-title">14</h3> 
+                          </div>
+                        </div>
+                        <div class="card card-stats">
+                          <div class="card-header card-header-warning card-header-icon">
+                             <p class="card-category">Ocorrências</p>
                             <h3 class="card-title">14</h3> 
                           </div>
                         </div>
