@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Timer</title>
+</head>
+<body>
+ <button class="register">Register background sync</button>
+<div class="log"></div>
+<script type="text/javascript">
+		
+		// Register your service worker:
+		navigator.serviceWorker.register('worker.js');
+
+		// Then later, request a one-off sync:
+		navigator.serviceWorker.ready.then(function(swRegistration) {
+		  return swRegistration.sync.register('myFirstSync');
+		});
+
+
+		 document.querySelector('.register').addEventListener('click', function(event) {
+      event.preventDefault();
+
+      navigator.serviceWorker.ready.then(function(swRegistration) {
+		  return swRegistration.sync.register('myFirstSync');
+		});
+    });
+
+
+    var logEl = document.querySelector('.log');
+    function log(msg) {
+      var p = document.createElement('p');
+      p.textContent = msg;
+      logEl.appendChild(p);
+      console.log(msg);
+    }
+
+ 
+
+    window.onerror = function(msg) {
+      log(msg);
+    };
+
+	</script>
+</body>
+</html>

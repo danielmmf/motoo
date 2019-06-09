@@ -1,0 +1,80 @@
+.progresso {
+    float:left;
+    position:relative;
+    margin-top:30px;
+
+    .tooltip {
+        position:absolute;
+        top:0;
+        display:block !important;
+
+    }
+
+    label {
+        font-size:22px;
+        color:$cinza-b;
+        float:left;
+        width:100%;
+    }
+    .progress {
+        height: 36px;
+        position:relative;
+        float:left;
+        width:100%;
+        img {
+            position:absolute;
+            top:0;
+            right:0;
+        }
+    }
+
+    .progress_volume {
+        background: #98cfb4;
+
+        .progress-bar {
+            background: $verde-a;
+            box-shadow: none;
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    .progress_dist {
+        background: #eeeeb7;
+
+        .progress-bar {
+            background: #d6d54d;
+            box-shadow: none;
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    .progress_trein {
+        background: #fa9bb1;
+
+        .progress-bar {
+            background: #f5083f;
+            box-shadow: none;
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+}
+
+
+.tooltip > .tooltip-inner {
+    background-color: #018a45;
+    padding: 3px 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-top-color: #018a45;
+    border-width: 5px 5px 0;
+}

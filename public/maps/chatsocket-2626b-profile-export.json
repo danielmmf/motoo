@@ -1,0 +1,13 @@
+{
+  "m1" : {
+    "compileMessage" : false,
+    "lat" : -23.501,
+    "lng" : -46.6309,
+    "message" : "I'm a static marker"
+  },"m2" : {
+    "compileMessage" : false,
+    "lat" : -23.521,
+    "lng" : -46.6329,
+    "message" : "I'm a static marker"
+  }
+}

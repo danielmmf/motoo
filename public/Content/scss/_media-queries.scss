@@ -1,0 +1,46 @@
+
+@media screen and (min-width:768px) {
+    .rank .well {
+        max-width: 470px;
+    }
+
+    .login-inputs {
+        max-width: 800px;
+    }
+
+    input, select, textarea {
+        max-width: 100%;
+    }
+
+    .painel-numb {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .btn-primeiro-acc {
+        margin-right: 30px;
+    }
+
+    .laran img {
+        max-width: 120px;
+    }
+
+    .laranjetas .realizado h2 {
+        color: #018a45;
+        font-size: 20px;
+    }
+
+    .laranjetas .pendente h2 {
+        color: #018a45;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .barra {
+        position: fixed;
+        left: -70px;
+        top: 57px;
+    }
+}

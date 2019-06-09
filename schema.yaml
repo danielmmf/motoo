@@ -1,0 +1,300 @@
+Address:
+  belongsTo: user,manufacturer,company
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    street:
+      schema: string
+      rules: required
+      tags: fillable 
+    number:
+      schema: string
+      rules: required
+      tags: fillable
+    zipcode:
+      schema: string
+      rules: required
+      tags: fillable
+    city:
+      schema: string
+      rules: required
+      tags: fillable
+    state:
+      schema: string
+      rules: required
+      tags: fillable
+    phone:
+      schema: string
+      tags: fillable       
+  add: timestamps softDeletes
+User:
+  belongsTo: group
+  hasMany: Addresses,Carts
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    email:
+      schema: string
+      rules: required
+      tags: fillable 
+    email_comercial:
+      schema: string
+      tags: fillable   
+    cpf:
+      schema: string
+      rules: required
+      tags: fillable 
+    rg:
+      schema: string
+      rules: required
+      tags: fillable  
+    sexo:
+      schema: string
+      rules: required
+      tags: fillable
+    nascimento:
+      schema: date
+      rules: date
+      tags: date fillable  
+    estado_civil:
+      schema: string
+      rules: required
+      tags: fillable 
+    perfil:
+      schema: string
+      rules: required
+      tags: fillable          
+    password:
+      schema: string
+      rules: required hidden
+      tags: fillable 
+  add: timestamps softDeletes
+Group:
+  hasMany: users
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+  add: timestamps
+Category:
+  hasMany: contents
+  fields:
+    name:
+      schema: string:50 unique
+      rules: required|min:3
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+    url:
+      schema: string
+      tags: fillable  
+Content:
+  belongsTo: category,user
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+    published_at:
+      schema: date
+      rules: date
+      tags: date fillable
+    url:
+      schema: string
+      tags: fillable  
+  add: timestamps softDeletes
+Manufacturer:
+  hasMany: users,addresses
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+    cnpj:
+      schema: string
+      rules: required
+      tags: fillable
+    url:
+      schema: string
+      tags: fillable  
+  add: timestamps 
+Tag:
+  belongsTo: product
+  fields:
+    name:
+      schema: string:50 unique
+      rules: required|min:3
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable 
+Coupon:
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+    added_at:
+      schema: date
+      rules: date
+      tags: date fillable
+    price:
+      schema: 'decimal:5,2' # need quotes when using ','
+      rules: numeric
+      tags: fillable
+    discount:
+      schema: 'decimal:5,2' # need quotes when using ','
+      rules: numeric
+      tags: fillable
+    valid_until:
+      schema: date
+      rules: date
+      tags: date fillable 
+  add: timestamps
+Attach:
+  belongsTo: user
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+    filename:
+      schema: string
+      rules: required
+      tags: fillable 
+    original_filename:
+      schema: string
+      rules: required
+      tags: fillable 
+    mime:
+      schema: string
+      rules: required
+      tags: fillable 
+    entity:
+      schema: string
+      rules: required
+      tags: fillable 
+    entity_id:
+      schema: integer # need quotes when using ','
+      rules: numeric
+      tags: fillable,key
+  add: timestamps softDeletes 
+Driver:
+  hasMany: addresses
+  belongsTo: Company
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    email:
+      schema: string
+      rules: required
+      tags: fillable 
+    cnh:
+      schema: string
+      tags: fillable   
+    cpf:
+      schema: string nullable
+      tags: fillable 
+    rg:
+      schema: string nullable
+      tags: fillable  
+    sexo:
+      schema: string nullable
+      tags: fillable
+    nascimento:
+      schema: date nullable
+      rules: date
+      tags: date fillable  
+    estado_civil:
+      schema: string nullable
+      tags: fillable 
+    perfil:
+      schema: string nullable
+      tags: fillable          
+    password:
+      schema: string
+      rules: required hidden
+      tags: fillable   
+  add: timestamps softDeletes
+Car:
+  belongsTo: Company
+  fields:
+    name:
+      schema: string
+      rules: required
+      tags: fillable
+    desc:
+      schema: text nullable
+      tags: fillable
+    modelo:
+      schema: string
+      tags: fillable 
+    marca:
+      schema: string
+      tags: fillable   
+    ano:
+      schema: string
+      tags: fillable 
+    cor:
+      schema: string
+      tags: fillable
+    placa:
+      schema: string
+      tags: fillable   
+    lotacao:
+      schema: integer # need quotes when using ','
+      rules: numeric
+      tags: fillable
+  add: timestamps softDeletes
+Company:
+  hasMany: drivers,cars,addresses
+  fields:
+    name:
+      schema: string:50 unique
+      rules: required|min:3
+      tags: fillable
+    cnpj:
+      schema: string:50 unique
+      rules: required|min:3
+      tags: fillable  
+    desc:
+      schema: text nullable
+      tags: fillable
+    email:
+      schema: text nullable
+      tags: fillable
+    telefone:
+      schema: text nullable
+      tags: fillable  
+    nome_fantasia:
+      schema: text nullable
+      tags: fillable
+    nome_juridica:
+      schema: text nullable
+      tags: fillable      
+    url:
+      schema: string
+      tags: fillable   

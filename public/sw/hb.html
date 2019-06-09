@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>post</title>
+</head>
+<body>
+
+</body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript">
+    
+      
+
+    var data = {"name": "John", "date": "2pm"};
+      jQuery.ajax({
+          accept: "application/json",
+          type: 'POST',
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          url: "https://chatsocket-2626b.firebaseio.com/hb/1.json",
+          data: JSON.stringify(data),
+      });
+
+
+  </script>
+</html>
+

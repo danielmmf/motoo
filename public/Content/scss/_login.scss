@@ -1,0 +1,536 @@
+
+.login {
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 40px;
+    color: $verde-a;
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    font-weight:bold;
+}
+
+.sub-tit {
+    text-align: center;
+    font-size: 22px;
+    color: $cinza-b;
+    width: 100%;
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+
+h4.sub-tit {
+    text-align: center;
+    font-size: 20px;
+    color: $cinza-b;
+    width: 100%;
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+.esqueci-title {
+    text-align: center;
+    font-size: 20px;
+    color: $verde-a;
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+}
+
+
+.login-inputs {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
+.login-logo {
+    max-width: 150px;
+    margin: 70px 0 0 0;
+}
+
+.txt-input {
+    background: #ededed;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+
+
+.tarja {
+    height: 12px;
+    background: $verde-tarja;
+    width: 100%;
+    float: left;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pixels {
+    z-index: 99;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 75px;
+    }
+}
+
+.lixeira {
+    position: absolute;
+    right: 10px;
+    bottom: 13px;
+}
+
+
+.lock {
+    position: absolute;
+    right: 14px;
+    bottom: 13px;
+}
+
+
+.tossing {
+    animation-name: tossing;
+    -webkit-animation-name: tossing;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.pulse {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+}
+
+
+@keyframes tossing {
+    0% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+@-webkit-keyframes tossing {
+    0% {
+        -webkit-transform: rotate(-4deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(4deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-4deg);
+    }
+}
+
+
+.pullDown {
+    animation-name: pullDown;
+    -webkit-animation-name: pullDown;
+    animation-duration: 1.1s;
+    -webkit-animation-duration: 1.1s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
+
+@keyframes pullDown {
+    0% {
+        transform: scaleY(0.1);
+    }
+
+    40% {
+        transform: scaleY(1.02);
+    }
+
+    60% {
+        transform: scaleY(0.98);
+    }
+
+    80% {
+        transform: scaleY(1.01);
+    }
+
+    100% {
+        transform: scaleY(0.98);
+    }
+
+    80% {
+        transform: scaleY(1.01);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@-webkit-keyframes pullDown {
+    0% {
+        -webkit-transform: scaleY(0.1);
+    }
+
+    40% {
+        -webkit-transform: scaleY(1.02);
+    }
+
+    60% {
+        -webkit-transform: scaleY(0.98);
+    }
+
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+
+    100% {
+        -webkit-transform: scaleY(0.98);
+    }
+
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+    }
+}
+
+
+.stretchRight {
+    animation-name: stretchRight;
+    -webkit-animation-name: stretchRight;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+}
+
+@keyframes stretchRight {
+    0% {
+        transform: scaleX(0.3);
+    }
+
+    40% {
+        transform: scaleX(1.02);
+    }
+
+    60% {
+        transform: scaleX(0.98);
+    }
+
+    80% {
+        transform: scaleX(1.01);
+    }
+
+    100% {
+        transform: scaleX(0.98);
+    }
+
+    80% {
+        transform: scaleX(1.01);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@-webkit-keyframes stretchRight {
+    0% {
+        -webkit-transform: scaleX(0.3);
+    }
+
+    40% {
+        -webkit-transform: scaleX(1.02);
+    }
+
+    60% {
+        -webkit-transform: scaleX(0.98);
+    }
+
+    80% {
+        -webkit-transform: scaleX(1.01);
+    }
+
+    100% {
+        -webkit-transform: scaleX(0.98);
+    }
+
+    80% {
+        -webkit-transform: scaleX(1.01);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+    }
+}
+
+.form-control[disabled] {
+    background: $amarelo-input;
+    color: $amarelo-input-txt !important;
+}
+
+.form-group {
+    float: left;
+    width: 100%;
+}
+
+
+.select {
+    background: url('../images/icons/arrow_select-l.png') no-repeat right $cinza;
+    appearance: none;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+}
+
+.bt-next {
+    margin: 10px 0;
+    width: 100%;
+    float: left;
+}
+
+
+.footer {
+    width: 100%;
+    float: left;
+    background: $cinza;
+
+
+    p {
+        padding: 8px 20px 20px 20px;
+        color: $branco;
+        color: #acacac;
+        width: 100%;
+        text-align: center;
+
+        img {
+            top: 10px;
+            position: relative;
+        }
+    }
+}
+
+.form-control {
+    color: $cinza-b;
+}
+
+.padd-left-0 {
+    padding-left: 0;
+}
+
+.padd-right-0 {
+    padding-right: 0;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label {
+    background: url("../images/icons/btn_nao.png") no-repeat;
+    height: 90px;
+    width: 60px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    float: none;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+
+    span {
+        position: relative;
+        top: 62px;
+        font-size: 22px;
+        color: $cinza-b;
+    }
+}
+
+input[type=radio]:checked + label {
+    background: url("../images/icons/btn_sim.png") no-repeat;
+    height: 90px;
+    width: 60px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    float: none;
+    cursor: pointer;
+    text-align: center;
+
+    span {
+        position: relative;
+        top: 62px;
+        font-size: 22px;
+        color: $verde-c;
+    }
+}
+
+
+.filhos-camp {
+    float: left;
+    margin-bottom: 50px;
+}
+
+.number-spinner {
+    a {
+        cursor: pointer;
+    }
+
+    input {
+        font-size: 24px;
+        max-width: 100px;
+    }
+}
+
+
+.funkyradio div {
+    clear: both;
+    overflow: hidden;
+}
+
+.funkyradio label {
+    width: 100%;
+    border-radius: 3px;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+.funkyradio input[type="checkbox"]:empty {
+    display: none;
+}
+
+
+.funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 1.5em;
+    text-indent: 3.25em;
+    margin: 1em 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+    a{
+        font-weight:bold;
+        color:$verde-b;
+    }
+}
+
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 0;
+    font-size: 20px;
+}
+
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+
+
+.funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+}
+
+
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #ccc;
+}
+
+
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+
+
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5cb85c;
+}

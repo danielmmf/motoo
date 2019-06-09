@@ -1,0 +1,1 @@
+essa home é a padrao quando seu app nao ta configurado direito idiota.

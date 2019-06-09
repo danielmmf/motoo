@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<input type="button" value="start" onclick="startWork()" /><br>
+<input type="button" value="passObject" onclick="finishWork()" />
+
+<script>
+    var worker = new Worker("sworker.js");
+
+    var incompleteObject = {
+        val     : 0,
+        done    : false
+    };
+
+
+    worker.onmessage = function(e) {
+        console.log("Exit Status: ");
+        console.log(e.data);
+    }
+
+    function startWork() {
+        worker.postMessage(incompleteObject);
+    }
+    function finishWork() {
+        incompleteObject.done = true;
+        worker.postMessage(incompleteObject);
+    }
+
+</script>
+</body>
+
+</html>

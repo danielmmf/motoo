@@ -1,0 +1,144 @@
+// calcula a font em rem e em browsers antigos atribui o valor em px
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+// calcula a font em rem e em browsers antigos atribui o valor em px
+
+@mixin headers {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin box-content {
+    padding: 49px 0 76px 0;
+}
+
+.modal {
+    z-index: 1201;
+}
+
+.modal-padrao {
+    max-width: 280px;
+    margin-top: 150px;
+}
+
+.modal-dell {
+    background: $verde-b;
+    border-radius: 0;
+    max-width: 246px;
+    display: block;
+    float: left;
+    padding: 5px;
+    border: none;
+    box-shadow: none;
+
+    .top-modal {
+        position: absolute;
+        top: -28px;
+        left: 0;
+    }
+
+    p {
+        color: $verde-a;
+        margin: 20px 0 20px 0;
+        font-size: 28px;
+        text-align: center;
+        display: block;
+    }
+
+    .span1 {
+        font-size: 18px;
+        color: $branco;
+        padding: 0 5px;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+        display: inline-block;
+    }
+
+    .btn-login {
+        font-size: 24px;
+    }
+}
+
+
+.container-bar {
+    max-width: 100px;
+    margin: 0 auto;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -4px;
+        z-index: 99;
+        left: 8px;
+    }
+}
+
+
+
+.vertical {
+    position: relative;
+    margin: 20px auto 0 auto;
+    width: 90px;
+    height: 82px;
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    background: #5bae22;
+    border-radius: 0;
+}
+
+
+.progress-bar {
+    box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
+
+.bar-cadastro {
+    background: $verde-a;
+    font-size: 30px;
+
+    span {
+        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+        left: -30px;
+        color: $branco;
+        bottom: 24px;
+    }
+}
+
+.proc {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.close {
+    font-size: 30px;
+    color: #018a45;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.img-cron {
+    text-align: center;
+
+    img {
+        display: inline;
+        float: none;
+        position: relative;
+        top: 15px;
+    }
+}

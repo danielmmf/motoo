@@ -1,0 +1,77 @@
+.upload-photo {
+    position: relative;
+    max-width: 100px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+
+    #file {
+        display: none;
+    }
+
+    .file__drop {
+        position: absolute;
+        bottom: 13px;
+        z-index: 99;
+        right: 27px;
+        cursor: pointer;
+    }
+
+    .mask-up {
+        max-width: 100px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .image-user {
+        position: absolute;
+        top: 0;
+        z-index: 98;
+
+        img {
+            max-width: 96px;
+            border-radius: 50%;
+            position: relative;
+            top: 6px;
+        }
+    }
+}
+
+.upload-photo-home {
+    position: relative;
+    max-width: 80px;
+    float: left;
+    text-align: center;
+    margin-right: 6px;
+
+    #file {
+        display: none;
+    }
+
+    .file__drop {
+        position: absolute;
+        bottom: 9px;
+        z-index: 99;
+        right: 0;
+        cursor: pointer;
+        width: 40px;
+    }
+
+    .mask-up {
+        max-width: 80px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .image-user {
+        position: absolute;
+        top: 0;
+        z-index: 98;
+
+        img {
+            max-width: 76px;
+            border-radius: 50%;
+            position: relative;
+            top: 5px;
+        }
+    }
+}

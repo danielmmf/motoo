@@ -1,0 +1,22 @@
+{
+  "m1" : {
+    "compileMessage" : false,
+    "lat" : -23.501,
+    "lng" : -46.6309,
+    "message" : "bbbbbbbbbbr"
+  },
+  "m2" : {
+    "compileMessage" : false,
+    "draggable" : true,
+    "lat" : -23.521181707248573,
+    "lng" : -46.632843017578125,
+    "message" : "<div ng-include src=\"'views/template.html'\"></div>"
+  },
+  "m3" : {
+    "compileMessage" : false,
+    "draggable" : true,
+    "lat" : -23.621,
+    "lng" : -46.6929,
+    "message" : "<div ng-include src=\"'views/pop.html'\"></div>"
+  }
+}

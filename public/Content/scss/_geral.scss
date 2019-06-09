@@ -1,0 +1,717 @@
+body {
+    font-family: $font-goch;
+}
+
+.base-faq {
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+
+.base {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+
+
+
+
+.contains {
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.dados-perfil {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+
+    img {
+        float: left;
+    }
+
+    .dados {
+        width: 50%;
+        float: left;
+        padding: 5px 2px;
+
+        h2 {
+            float: left;
+            text-align: left;
+            font-size: 18px;
+            color: $verde-a;
+        }
+
+        h3 {
+            float: left;
+            text-align: left;
+            color: $cinza-b;
+            font-size: 22px;
+        }
+
+        p {
+            float: left;
+            text-align: left;
+            font-size: 40px;
+            color: $verde-a;
+        }
+    }
+
+
+    .box {
+        float: left;
+        width: 25%;
+        background: $verde-c;
+        ;
+        min-height: 80px;
+        position: relative;
+        text-align: center;
+        padding: 4px;
+
+        img {
+            position: relative;
+            top: -5px;
+            left: 2px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+            color: $verde-a;
+
+            span {
+                font-size: 42px;
+                color: $branco;
+            }
+        }
+    }
+}
+
+.box {
+    float: left;
+    width: 22%;
+    background: $verde-c;
+    min-height: 80px;
+    position: relative;
+    text-align: center;
+    padding: 4px;
+
+    img {
+        position: relative;
+        top: -5px;
+        left: 8px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+        color: $verde-a;
+
+        span {
+            font-size: 42px;
+            color: $branco;
+        }
+    }
+}
+
+.vermais {
+    margin-top: 20px;
+}
+
+.box-treinamentos {
+    img {
+        position: absolute;
+        top: 0;
+        left: 44%;
+    }
+
+    background: $verde-c;
+    width: 100%;
+    min-height: 80px;
+    padding: 30px 20px 20px;
+    display: block;
+    color: $branco;
+    font-size: 30px;
+    margin: 50px 0 40px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        color: $verde-a;
+        text-decoration: none;
+    }
+}
+
+
+.tooltip {
+    position: relative;
+    float: right;
+}
+
+.tooltip > .tooltip-inner {
+    background-color: #eebf3f;
+    padding: 5px 15px;
+    color: rgb(23,44,66);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.popOver + .tooltip > .tooltip-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #eebf3f;
+}
+
+
+.page {
+    h1 {
+        font-size: 30px;
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+        color: $verde-a;
+        font-weight:bold;
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-size: 22px;
+        width: 100%;
+        float: left;
+        color: $verde-a;
+        text-align: center;
+    }
+
+
+    h3 {
+        margin-top: 10px;
+        font-size: 14px;
+        width: 100%;
+        float: left;
+        color: $cinza-b;
+        text-align: center;
+    }
+
+    h1.h1-2 {
+        font-size: 30px;
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0 0 0;
+        color: $verde-a;
+    }
+
+    h3.h3-2 {
+        margin-top: 3px;
+        font-size: 14px;
+        width: 100%;
+        float: left;
+        color: $cinza-b;
+        text-align: center;
+    }
+}
+
+.img-treinamentos {
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    min-height: 100px;
+    width: 100%;
+    float: left;
+
+    a {
+        h1 {
+            position: relative;
+            z-index: 110;
+            color: $branco;
+            position: absolute;
+            top: 12px;
+            width: 100%;
+        }
+
+        h2 {
+            position: relative;
+            z-index: 110;
+            color: $branco;
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .banner-trei {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+.laranjetas {
+    padding: 10px 20px;
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+
+    div {
+        padding: 0 10px;
+    }
+
+    .pendente {
+        h2 {
+            color: $cinza-b;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .realizado {
+        h2 {
+            color: $verde-a;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
+
+.bt-biblioteca {
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+
+    .btn-login {
+        font-size: 20px;
+    }
+}
+
+.treinamentos {
+    h1 {
+    }
+
+    h2 {
+        color: $cinza-b;
+        font-size: 20px;
+        margin: 5px 0 20px;
+        width: 100%;
+    }
+
+    div {
+        .btn-login {
+            font-size: 26px;
+        }
+    }
+}
+
+.video-treinamento {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 480px;
+    display: table;
+    width: 100%;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: 31%;
+        display: block;
+        width: 0;
+        background: url(../images/icons/bef-videos.png) no-repeat;
+        height: 30px;
+        width: 160px;
+    }
+
+
+    video {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .play {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 989;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+
+    .pause {
+        position: absolute;
+        top: 15px;
+        left: -5px;
+        width: 100%;
+        text-align: right;
+        z-index: 989;
+        display: none;
+
+        img {
+            cursor: pointer;
+            max-width: 40px;
+        }
+    }
+}
+
+
+.history-link {
+    position: absolute;
+    left: 1%;
+    top: 60px;
+    z-index: 997;
+}
+
+
+
+.rank {
+    .well {
+        max-width: 340px;
+        margin: 10px auto;
+        background: none;
+        border: none;
+        display: table;
+        width: 100%;
+        padding: 15px 5px;
+
+        table {
+
+            .voce {
+                background: #eeeeb7;
+
+                td {
+                    color: $verde-a;
+                    border: none;
+                    padding: 14px 10px;
+                    font-size: 14px;
+                    position: relative;
+
+                    &:nth-child(3) {
+                        text-align: center;
+                        font-size: 16px;
+
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: -1px;
+                            right: 19px;
+                            display: block;
+                            width: 0;
+                            background: url(/Content/images/icons/bef-barra.png) no-repeat;
+                            height: 30px;
+                            width: 65px;
+                        }
+                    }
+                }
+
+                td.pos {
+                    background: $verde-b;
+                    color: $branco;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+
+            tr {
+                background: #cbe1b6;
+                border-bottom: 3px solid #ffffff;
+                position: relative;
+
+
+
+
+                td {
+                    color: $verde-a;
+                    border: none;
+                    padding: 14px 10px;
+                    font-size: 14px;
+                    position: relative;
+
+                    &:nth-child(3) {
+                        text-align: center;
+                        font-size: 16px;
+
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: -1px;
+                            right: 19px;
+                            display: block;
+                            width: 0;
+                            background: url(/Content/images/icons/bef-barra.png) no-repeat;
+                            height: 30px;
+                            width: 65px;
+                        }
+                    }
+                }
+
+                th {
+                    &:nth-child(3) {
+                        text-align: center;
+                    }
+                }
+
+                td.pos {
+                    background: $verde-c;
+                    color: $branco;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.extrat {
+    .well {
+        max-width: 645px;
+        margin: 10px auto;
+        background: none;
+        border: none;
+        display: table;
+        width: 100%;
+        padding: 15px;
+
+        table {
+            tr:first-child {
+                td {
+                    background: $verde-a !important;
+                    color: $branco;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+
+            .voce {
+                background: #eeeeb7;
+
+
+
+
+                td {
+                    color: $verde-a;
+                    border: none;
+                    padding: 14px 10px;
+                    font-size: 14px;
+                    position: relative;
+
+                    &:nth-child(3) {
+                        text-align: center;
+                        font-size: 16px;
+
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: -1px;
+                            right: 19px;
+                            display: block;
+                            width: 0;
+                            background: url(/Content/images/icons/bef-barra.png) no-repeat;
+                            height: 30px;
+                            width: 65px;
+                        }
+                    }
+                }
+
+                td.pos {
+                    background: $verde-b;
+                    color: $branco;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+
+            tr {
+          
+                border-bottom: 3px solid #ffffff;
+                position: relative;
+
+
+                /* For small screen */
+                &:nth-child(even) {
+                    background-color: #eeedb6;
+             
+                }
+
+                &:nth-child(odd) {
+                    background-color: #e3e288;
+                  
+                }
+
+
+                td {
+                      color:#000000;
+                    border: none;
+                    padding: 14px 10px;
+                    font-size: 14px;
+                    position: relative;
+
+                    &:nth-child(3) {
+                        text-align: center;
+                        font-size: 16px;
+
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: -1px;
+                            right: 19px;
+                            display: block;
+                            width: 0;
+                            background: url(/Content/images/icons/bef-barra.png) no-repeat;
+                            height: 30px;
+                            width: 65px;
+                        }
+                    }
+                }
+
+                th {
+                    &:nth-child(3) {
+                        text-align: center;
+                    }
+                }
+
+                td.pos {
+                    background: $verde-c;
+                    color: $branco;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.baixar-extrat {
+    text-align:center;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+
+.posit-renk {
+    max-width: 100px;
+    margin: 0 auto;
+
+    .box {
+        width: 100%;
+
+        img {
+            position: relative;
+            top: -6px;
+            left: -2px;
+        }
+    }
+}
+
+
+.posit-ext {
+    max-width: 100px;
+    margin: 0 auto;
+
+    .box {
+        p {
+            font-size: 16px;
+            margin: 5px 0;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        width: 100%;
+
+        span {
+            font-size: 30px;
+        }
+
+        img {
+            position: relative;
+            top: -6px;
+            left: -2px;
+        }
+    }
+}
+
+
+
+.text-reg {
+    max-height: 400px;
+    overflow: auto;
+    width: 100%;
+    float: left;
+    color: $verde-a;
+
+    p {
+        padding: 10px 20px;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $verde-a;
+    border: 14px none #ffffff;
+    border-radius: 67px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #80ff80;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #008000;
+}
+
+::-webkit-scrollbar-track {
+    background: $verde-c;
+    border: 48px none #ffffff;
+    border-radius: 35px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #80ff80;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Vimeo Upload</title>
+</head>
+<body>
+
+<div id="resp"></div>
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+	    /*$.post("https://api.vimeo.com/oauth/authorize?client_id=650638a545f61d482fc89344a441c6634c4ab756&response_type=code&redirect_uri=https://devinhas-sp.herokuapp.com/vimeo/api&state=abc123", {client_id: "650638a545f61d482fc89344a441c6634c4ab756"}, function(result){
+        $("#resp").html(result);
+    });
+        */
+
+var client_id = "650638a545f61d482fc89344a441c6634c4ab756";
+var client_secret = "p2aOtl1zpm2GqFucMbIoaaxpSt6L5YSGTkEIrRudwpnyR0XfygMyjI06CEHWFomzUkFQaLR/LyXSgoMy/UeHwvuNH99irgPtmpty/sAAiNoRMyJ6LdIQ4wASYQ+4vbjR";
+
+        var access_token = "basic " + btoa(client_id + ":" + client_secret);
+        console.log(access_token);
+		jQuery.ajax( {
+		    url: 'https://api.vimeo.com/oauth/authorize?client_id=650638a545f61d482fc89344a441c6634c4ab756&response_type=code&redirect_uri=https://devinhas-sp.herokuapp.com/vimeo/api&state=abc123',
+		    type: 'POST',
+		    data: { client_id: "650638a545f61d482fc89344a441c6634c4ab756" },
+		    beforeSend : function( xhr ) {
+		        xhr.setRequestHeader( 'Authorization', 'BEARER ' + access_token );
+		    },
+		    success: function( response ) {
+		        // response
+		       console.log(response); 
+		    }
+		} );
+
+	});
+
+
+
+
+
+</script>
+</html>

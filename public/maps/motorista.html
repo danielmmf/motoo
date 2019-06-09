@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html ng-app="demoapp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/angular.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/angular-leaflet-directive.js"></script>
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <style media="screen" type="text/css">
+        .form-popup {
+            width: 200px;
+        }
+    </style>
+    <script>
+    //-23,5486. Longitude de Praça da Sé é -46,6392
+        var app = angular.module("demoapp", ["leaflet-directive","firebase"]);
+
+
+        var config = {
+            apiKey: "AIzaSyDnsrFKJ00l3vye_AGwVt9womLPJGx51As",
+            authDomain: "chatsocket-2626b.firebaseapp.com",
+            databaseURL: "https://chatsocket-2626b.firebaseio.com",
+            projectId: "chatsocket-2626b",
+            storageBucket: "chatsocket-2626b.appspot.com",
+            messagingSenderId: "1075121073644"
+        };
+        firebase.initializeApp(config);
+
+
+
+        app.controller('MarkersAngularTemplateController', [ '$scope', '$firebaseObject', "leafletMarkerEvents", function($scope, $firebaseObject, leafletMarkerEvents) {
+            angular.extend($scope, {
+                SP: {
+                    lat: -23.5486,
+                    lng: -46.6392,
+                    zoom: 8
+                },
+                data: {markers: {}}
+            });
+
+             var ref = firebase.database().ref().child("markers");
+              // download the data into a local object
+              var syncObject = $firebaseObject(ref);
+              // synchronize the object with a three-way data binding
+              // click on `index.html` above to see it used in the DOM!
+              syncObject.$bindTo($scope, "data.markers");
+
+            $scope.addMarkers = function() {
+                $scope.data.markers = {};
+                angular.extend($scope.data, { angularInterpolatedMessage : "Angular interpolated message!"});
+                angular.extend($scope.data, {
+                    markers: {
+                        m1: {
+                            lat: -23.505,
+                            lng: -46.6309,
+                            compileMessage: false,
+                           // focus: true,
+                            message: "I'm a static marker",
+                        },
+                        m2: {
+                            lat: -23.53,
+                            lng: -46.63,
+                            //focus: true,
+                            message: "<div ng-include src=\"'views/template.html'\"></div>",
+                            draggable: true,
+                        },
+                        m3: {
+                            lat: -23.52,
+                            lng: -46.631,
+                            getMessageScope: function () { return $scope; },
+                            message: "<p>{{data.angularInterpolatedMessage}}</p>",
+                            compileMessage: true
+                        }
+                    }
+                });
+            };
+
+            $scope.removeMarkers = function() {
+                $scope.data.markers = {};
+            }
+
+            $scope.altera = function() {
+                var optn = {
+                    enableHighAccuracy: true,
+                    timeout: Infinity,
+                    maximumAge: 0   
+                };
+           if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                  
+
+                        $scope.data.markers.m1.lat = position.coords.latitude;
+                        $scope.data.markers.m1.lng = position.coords.longitude;
+                });
+            }
+ 
+                
+            }
+
+            $scope.newMarker = function() {
+                $scope.data.markers = {
+                        m1: {
+                            lat: 51.505,
+                            lng: -0.08,
+                            compileMessage: false,
+                            message: "I'm a static marker",
+                        },
+                        m2: {
+                            lat: 51,
+                            lng: 0,
+                            //focus: true,
+                            message: "<div ng-include src=\"'views/template.html'\"></div>",
+                            draggable: true,
+                        },
+                        m3: {
+                            lat: 51,
+                            lng: -1,
+                            getMessageScope: function () { return $scope; },
+                            message: "<p>{{data.angularInterpolatedMessage}}</p>",
+                            compileMessage: true
+                        },m4: {
+                            lat: 51.506,
+                            lng: -0.08,
+                            compileMessage: false,
+                            message: "I'm a static marker,,,,,,,,,,,,,,,,,",
+                        },
+                        m5: {
+                            lat: 51.505,
+                            lng: 0,
+                            focus: true,
+                            message: "<div ng-include src=\"'views/template.html'\"></div>",
+                            draggable: true,
+                        },
+                        m6: {
+                            lat: 51.504,
+                            lng: -1,
+                            getMessageScope: function () { return $scope; },
+                            message: "<p>{{data.angularInterpolatedMessage}}</p>",
+                            compileMessage: true
+                        }
+                    };
+            }
+
+            $scope.events = {
+                markers: {
+                    enable: leafletMarkerEvents.getAvailableEvents(),
+                }
+            };
+
+            $scope.eventDetected = "No events yet...";
+            var markerEvents = leafletMarkerEvents.getAvailableEvents();
+            for (var k in markerEvents){
+                var eventName = 'leafletDirectiveMarker.' + markerEvents[k];
+                $scope.$on(eventName, function(event, args){
+                    if( event.name == 'leafletDirectiveMarker.dragend'){
+                       // alert(event.name);
+                       // console.log(event);
+                       // console.log(args);
+                      //  console.log(args.model);
+                      //  console.log(args.modelName);
+                      //  console.log(event);
+                        //.leafletEvent
+                        $scope.data.markers[args.modelName].lat = args.model.lat;
+                        $scope.data.markers[args.modelName].lng = args.model.lng;
+                    }
+                    $scope.eventDetected = event.name;
+                });
+            }
+
+
+            $scope.addMarkers();
+
+              var optn = {
+                    enableHighAccuracy: true,
+                    timeout: Infinity,
+                    maximumAge: 0   
+                };
+           if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                        //$("#response").html(position.coords.latitude+','+
+//                                               position.coords.longitude);
+
+                        $scope.data.markers.m1.lat = position.coords.latitude;
+                        $scope.data.markers.m1.lng = position.coords.longitude;
+                });
+            }
+ 
+        } ]);
+        app.controller('ViewController', ['$scope', function($scope) {
+            $scope.user = {}
+            $scope.greet = function(user) {
+              alert('Ola ' + user.name)
+            }
+        } ]);
+
+         app.controller('PopController', ['$scope', function($scope) {
+            $scope.atualiza = function() {
+              alert('Esse aqui é  clicado no administrativo ');
+            }
+        } ]);
+    </script>
+  </head>
+  <body ng-controller="MarkersAngularTemplateController">
+      <leaflet event-broadcast="events" lf-center="SP" markers="data.markers" height="480px" width="100%"></leaflet>
+      <h1>Mexa os marcadores para refletir no usuario</h1>
+       
+    <hr>
+      {{data}}
+      <button ng-click="removeMarkers()">Remove markers</button>
+      <button ng-click="addMarkers()">Add markers</button>
+      <button ng-click="newMarker()">New marker</button>
+      <button ng-click="altera()">Pow</button>
+  </body>
+</html>

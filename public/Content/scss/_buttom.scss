@@ -1,0 +1,223 @@
+﻿.btn-small {
+    background: #018a45;
+    width: 100%;
+    max-width: 292px;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 12px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 10px;
+    display: inline-grid;
+    line-height: 14px;
+
+    &:hover {
+        background: $verde-d;
+        color: $branco;
+    }
+}
+
+
+
+.btn-login {
+    background: $verde-a;
+    width: 100%;
+    max-width: 290px;
+    margin: 20px 0;
+    color: $branco;
+    font-size: 28px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 10px;
+
+    &:hover {
+        background: $verde-b;
+        text-decoration: none;
+        color: $verde-a;
+    }
+}
+
+.btn-primeiro-acc {
+    background: $verde-b;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px 0;
+    color: $branco;
+    font-size: 20px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 30px 2px;
+    border-radius: 10px;
+    display: inline-block;
+
+
+    &:hover {
+        background: $verde-a;
+        text-decoration: none;
+        color: $verde-b;
+    }
+}
+
+.btn-primeiro-acc-2 {
+    background: $verde-a;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px 0;
+    color: $branco;
+    font-size: 20px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 30px 2px;
+    border-radius: 10px;
+    display: inline-block;
+
+
+    &:hover {
+        background: $verde-b;
+        text-decoration: none;
+        color: $verde-a;
+    }
+}
+
+
+a.btn-faq {
+    width: 100%;
+    max-width: 100px;
+    margin: 30px auto !important;
+    padding: 10px;
+    margin: 0 auto;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    background: $verde-b;
+    border-radius: 8px;
+    color: $branco;
+    display: block;
+
+    &:hover {
+        background: $verde-a;
+        text-decoration: none;
+        color: $verde-b;
+    }
+}
+
+
+
+.btn-limpar {
+    background: $cinza-b;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px 0;
+    color: $branco;
+    font-size: 28px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 10px;
+
+    &:hover {
+        background: $verde-b;
+        text-decoration: none;
+    }
+}
+
+
+.btn-verde-b {
+    background: $verde-b;
+    padding: 15px 8px;
+    color: $branco;
+    border-radius: 10px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: $verde-a;
+        text-decoration: none;
+        color: $branco;
+    }
+}
+
+.bt-voltar {
+    position: absolute;
+    top: 20px;
+    left: 4%;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+
+    &:hover {
+        transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+
+.btn-ver {
+    background: #018a45;
+    width: 100%;
+    max-width: 290px;
+    margin: 30px 0 20px 0;
+    color: #fff;
+    font-size: 20px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+    &:hover {
+        background: $verde-b;
+        text-decoration: none;
+        color: $verde-a;
+    }
+}
+
+.btn-toque {
+    background: #018a45;
+    width: 100%;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding: 10px 5px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align:center;
+
+
+    &:hover {
+        background: $verde-b;
+        text-decoration: none;
+        color: $verde-a;
+    }
+}

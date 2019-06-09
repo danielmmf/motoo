@@ -1,0 +1,20 @@
+// calcula a font em rem e em browsers antigos atribui o valor em px
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+// calcula a font em rem e em browsers antigos atribui o valor em px
+
+@mixin headers {
+	text-align: center;
+	text-transform: uppercase;  
+}
+
+@mixin box-content {
+    padding: 49px 0 76px 0;
+}

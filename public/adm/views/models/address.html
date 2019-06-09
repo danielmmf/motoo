@@ -1,0 +1,43 @@
+<span ng-controller="formCtrl"><input type="hidden" ng-model="loaded_entity.id"><div class="form-group"><label class="col-sm-2 control-label">RUA</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.rua" name="rua"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">NUMERO</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.numero" name="numero"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">CEP</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.cep" name="cep"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">COMPLEMENTO</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.complemento" name="complemento"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">BAIRRO</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.bairro" name="bairro"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">CIDADE</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.cidade" name="cidade"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">ESTADO</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.estado" name="estado"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div><div class="form-group"><label class="col-sm-2 control-label">TELEFONE</label>
+	            <div class="col-sm-10"><input type="text" class="form-control" ng-model="loaded_entity.telefone" name="telefone"></div>
+	        </div>
+	        <div class="hr-line-dashed"></div>
+				<div class="form-group">
+				<label class="col-sm-2 control-label"> User : </label>
+				    <div class="col-sm-10">
+				    <select class="form-control m-b" name="user_id" ng-model="loaded_entity.user_id">
+				        <option ng-repeat="relation in bt[0]  track by relation['name']" value="{{relation.id}}">{{relation.name}}</option>
+				    </select>
+				    </div>
+				</div>
+			</span>
+				<div class="form-group">
+				<label class="col-sm-2 control-label"> Manufacturer : </label>
+				    <div class="col-sm-10">
+				    <select class="form-control m-b" name="manufacturer_id" ng-model="loaded_entity.manufacturer_id">
+				        <option ng-repeat="relation in bt[1]  track by relation['name']" value="{{relation.id}}">{{relation.name}}</option>
+				    </select>
+				    </div>
+				</div>
+			</span><input type="hidden" class="form-control" id="pertences" value="user,manufacturer">

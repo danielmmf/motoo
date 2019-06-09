@@ -1,0 +1,27 @@
+[06-Jan-2018 10:52:21 UTC] PHP Fatal error:  Class 'App\Manufacturer' not found in /home/ubuntu/workspace/core2/app/Classes/Manufacturer.php on line 4
+[09-Jan-2018 05:31:30 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: file in /home/ubuntu/workspace/core2/app/Http/Controllers/DelValleController.php:232
+Stack trace:
+#0 /home/ubuntu/workspace/core2/app/Http/Controllers/DelValleController.php(232): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/ubuntu/wo...', 232, Array)
+#1 [internal function]: App\Http\Controllers\DelValleController->load_scores('volumes')
+#2 /home/ubuntu/workspace/core2/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /home/ubuntu/workspace/core2/vendor/illuminate/container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /home/ubuntu/workspace/core2/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#5 /home/ubuntu/workspace/core2/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lume in /home/ubuntu/workspace/core2/app/Http/Controllers/DelValleController.php on line 232
+[09-Jan-2018 05:35:24 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable: file in /home/ubuntu/workspace/core2/app/Http/Controllers/DelValleController.php:231
+Stack trace:
+#0 /home/ubuntu/workspace/core2/app/Http/Controllers/DelValleController.php(231): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Undefined varia...', '/home/ubuntu/wo...', 231, Array)
+#1 [internal function]: App\Http\Controllers\DelValleController->load_scores('volumes')
+#2 /home/ubuntu/workspace/core2/vendor/illuminate/container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#3 /home/ubuntu/workspace/core2/vendor/illuminate/container/BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#4 /home/ubuntu/workspace/core2/vendor/illuminate/container/BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(Laravel\Lumen\Application), Array, Object(Closure))
+#5 /home/ubuntu/workspace/core2/vendor/illuminate/container/Container.php(549): Illuminate\Container\BoundMethod::call(Object(Laravel\Lume in /home/ubuntu/workspace/core2/app/Http/Controllers/DelValleController.php on line 231
+[14-Jan-2018 07:53:15 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:53:18 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:53:34 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:53:58 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:54:03 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:54:57 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:55:00 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 07:55:59 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/ubuntu/workspace/core2/app/Http/Controllers/CoreController.php on line 10
+[14-Jan-2018 08:46:29 UTC] PHP Fatal error:  Cannot redeclare static App\Http\Controllers\Controller::$view as non static App\Http\Controllers\UbersController::$view in /home/ubuntu/workspace/core2/app/Http/Controllers/UbersController.php on line 5
+[14-Jan-2018 08:46:32 UTC] PHP Fatal error:  Cannot redeclare static App\Http\Controllers\Controller::$view as non static App\Http\Controllers\UbersController::$view in /home/ubuntu/workspace/core2/app/Http/Controllers/UbersController.php on line 5

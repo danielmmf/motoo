@@ -1,0 +1,112 @@
+.morecontent {
+    text-decoration: none;
+
+    a {
+        text-align: center;
+        background: #4caef0;
+        max-width: 70px;
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-style: italic;
+        border-radius: 20px;
+        margin: 30px auto;
+
+        &:active {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+
+html {
+    height: 100%;
+}
+
+#parallxWrapper {
+    margin: auto;
+    height: 540px;
+    width: 540px;
+}
+
+.parallxBackground {
+    height: 100%;
+    background-image: url("/images/calendario-sombra.png");
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.parallxLayerLogo {
+    width: 300px;
+    height: 225px;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-image: url("/Content/images/agenda.png");
+    position: absolute;
+    -webkit-transform: translateZ(90px);
+    -webkit-transition: all 0.2s;
+    transform: translateZ(90px);
+    transition: all 0.2s;
+    font-size: 15em;
+    font-weight: bold;
+    color: #324d5b;
+}
+
+.console-line {
+    text-align:center;
+}
+
+.parallxLayer:hover {
+    -webkit-transform: scale(1.05);
+    -webkit-transform: translateZ(30px);
+    transform: scale(1.05);
+    transform: translateZ(30px);
+    cursor: pointer;
+}
+
+.parallxLayerShooter {
+    width: 540px;
+    height: 540px;
+    float: right;
+    background-image: url("/images/calendario.png");
+    position: absolute;
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+}
+
+.parallxLayerRStar:hover {
+    -webkit-transform: scale(1.05);
+    -webkit-transform: translateZ(30px);
+    transform: scale(1.05);
+    transform: translateZ(30px);
+    cursor: pointer;
+}
+
+
+
+
+.lead {
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
